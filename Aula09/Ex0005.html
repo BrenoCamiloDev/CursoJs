@@ -15,12 +15,57 @@
 </head>
 <body>
     <h1>Iniciando estudos com o DOM </h1>
-    <p>Aqui vai o 1 resultado</p>
-    <p>Aqui vai o 2 resultado</p>
-    <div>Clique em mim</div>
+
+    <p>paragrafo selecionado por  Marca: ('name')[posição].</p>
+
+    <p id="p1"> Paragrado selecionado por ID: ('p1').</p>
+
+    <div name="msg">  
+        <p>Div selecionada por Name: ('d1')</p>
+        <h2 id="titulo">  h2 selecionado por queryselector ('#titulo' ou '.titulo')  </h2>
+    </div>
+
+    <ol>
+        <h4>ordem de cores de fundos dos Elemetos</h4>
+
+        <li>
+            primeiro paragrado: cor roxo
+        </li><br>
+
+        <li>
+            segundo paragrafo cor: laranja.
+        </li><br>
+
+        <li>
+            div: cor de fundo branca com cor de texto   preto.
+        </li><br>
+
+        <li>
+            h2: cor de texto amarela.
+        </li>
+    </ol>
+    <h2>Repetições utilizando o DOM</h2>
 
     <script>
+        /* inserindo variaveis*/
+        var paragrafo1 = document.getElementsByTagName('p')[0]
+
+        var paragrafoID = document.getElementById('p1')
+
+        var name1 = document.getElementsByTagName('msg')[0]
+
         
+
+    	document.write(`primeiro: ${paragrafo1.innerHTML}    `)
+
+        document.write(`segundo:  ${paragrafoID.innerHTML}    `)
+
+        document.write(`terceiro: ${name1.innerHTML}   `)
+
+
+
+
+   
     </script>
     
 </body>

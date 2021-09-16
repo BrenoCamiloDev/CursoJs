@@ -14,3 +14,30 @@ __R: Document Object Model.__
 
 
 ![image.jpg](https://lh3.googleusercontent.com/proxy/OsnLoA476WI8b8M5jGuqSqh--NcnlGWWP7IfyWmTeLyW2pKFwnXP2Xl3YPva-nZdWZbK_GcgsS1t_OczmrljOpePXSfEeUGZnaWEb6wFoqIrwYfS1ckeViEZmA)
+
+---
+## Como Navegar entre os elementos e selecionar:
+
+1. #### Marca:
+```
+getElementsByTagName()
+```
+2. #### ID:
+```
+getElementById()
+```
+3. #### Nome:
+```
+getElementsByName()
+```
+4. #### Classe:
+```
+getElementsByClassName()
+```
+5. #### Seletor:
+```
+querySelector()
+querySelectorAll()
+```
+
+---
