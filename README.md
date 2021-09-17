@@ -39,5 +39,8 @@ getElementsByClassName()
 querySelector()
 querySelectorAll()
 ```
+---
 
+
+# INICANDO COM EVENTOS DO DOM
 ---
