@@ -52,7 +52,9 @@
 
         var paragrafoID = document.getElementById('p1')
 
-        var name1 = document.getElementsByTagName('msg')[0]
+        var name1 = document.getElementsByName('msg')[0]
+
+        var sellec = window.document.querySelector('h2#titulo')
 
         
 
@@ -60,12 +62,10 @@
 
         document.write(`segundo:  ${paragrafoID.innerHTML}    `)
 
-        document.write(`terceiro: ${name1.innerHTML}   `)
+        document.write(`TERCEIRO: ${name1.innerHTML} `)
 
+        document.write(`COM ID: ${sellec.innerHTML}`)
 
-
-
-   
     </script>
     
 </body>
