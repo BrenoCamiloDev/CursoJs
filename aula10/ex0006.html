@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS DOM</title>
+    <style>
+        div#area{
+            font: normal 15pt arial;
+            background-color: rgb(46, 94, 46);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Iniciando aula 10 sobre eventos.
+    </h1>
+    <br>
+
+    <div id="area" >
+        Interaja...
+    </div>
+
+    <script>
+        /* var é feito o escopo global*/
+        var area = document.getElementById("area") 
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', Sair)
+        function clicar(){
+            area.innerText = 'clicou!'
+            area.style.backgroundColor = 'red'
+        }
+        function entrar(){
+            area.innerText = 'entrou!'
+            area.style.backgroundColor = 'blue'
+        }
+        function Sair(){
+            area.innerText = 'Saiu'
+            area.style.backgroundColor = 'green'
+        }
+
+    </script>
+</body>
+</html>
