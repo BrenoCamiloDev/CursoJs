@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        div#area{
+            background-color: green;
+            height: 100px;
+            line-height: 100px;
+            width: 100px;
+            text-align: center;
+            border: 1px solid black;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>trabalhando com eventos</h1>
+
+    <div id="area">
+        <h3>Interaja</h3>
+        <p>Cor de texto: <p id= res></p></p>
+    </div>
+    
+    
+    <script>
+        // events
+        var res = document.getElementById('res')
+        var area = document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrou)
+        area.addEventListener('mouseout', saiu)
+        // functions com events
+        function entrou(){
+            res.innerHTML = `blue`
+            res.style.backgroundColor='blue'
+            res.style.color = 'white'
+            
+        }
+        function clicar(){
+            res.innerHTML = `yellow`
+            res.style.backgroundColor = `yellow`
+            res.style.color = 'black'
+        }
+        function saiu(){
+            res.innerHTML = 'vermelha'
+            res.style.backgroundColor = 'red'
+            res.style.color = 'white'
+        }
+
+
+    </script>
+</body>
+</html>
