@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11</title>
+</head>
+<body>
+    <h1>DETRAN CE</h1>
+    <div>
+        <H3>Nome</H3>
+        <input type="text" name="name" placeholder="Insira seu nome"id="name">
+        <h3>Idade</h3>
+        <input type="number" placeholder="idade:" id="idade">
+        <input type="button" value="Verificar" onclick="verific()">
+        <p id='ress'>Resultado: </p>
+    </div>
+
+    <script>
+
+        function verific(){
+            var name = document.getElementById('name')
+            var idade = document.getElementById('idade')
+            var resposta = document.getElementById('ress')
+            var n1 = Number(idade.value)
+
+          if (n1 >= 18){
+            resposta.innerHTML += `Bem vindo(a) sua idade é  ${n1} você pode tirar sua habilitação <a href="#"> clique aqui para continuar </a>.`
+          } 
+          else {
+              resposta.innerHTML += `Desculpe sua idade é ${n1} você não tem idade o suficiente para continuar.`
+            }
+
+    
+        }
+    </script>
+    
+</body>
+</html>
