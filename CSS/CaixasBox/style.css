@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+
+blockquote{   
+    text-align: center;
+    width: calc(100% /2 -100px);
+    min-width: 400px;
+    max-width: 600px;
+
+}
+p {
+    color: black;
+}
